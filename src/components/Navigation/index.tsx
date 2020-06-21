@@ -2,15 +2,19 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const Navigation = () => {
+interface NavigationPropsInterface {
+  moveToProjects: () => void;
+  moveToContact: () => void;
+}
+
+const Navigation = (props: NavigationPropsInterface) => {
   return (
     <div className="navigation">
       <div className="left-nav">
         <div className="logo"><span>Jeremiah</span> Flores</div>
         <ul className="navigation-links">
-          <li className="navigation-item active">Projects</li>
-          <li className="navigation-item">Reviews</li>
-          <li className="navigation-item">Hire</li>
+          <li className="navigation-item" onClick={() => props.moveToProjects()}>Projects</li>
+          <li className="navigation-item" onClick={() => props.moveToContact()}>Contact</li>
         </ul>
       </div>
       <ul className="navigation-social">

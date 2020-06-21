@@ -1,4 +1,5 @@
 $backgroundColor: #2d2e32;
+*:focus {outline:0;}
 
 body, html, #root {
   padding: 0;
@@ -8,14 +9,122 @@ body, html, #root {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto';
 }
 
+label {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #25262a;
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.contact {
+  padding: 2.5rem 15rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .info {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+
+    font-style: italic;
+  }
+
+  .contact-btn {
+    background: #529ad1;
+    border: none;
+    color: #fff;
+    width: 120px;
+    height: 45px;
+    border-radius: 6px;
+    margin-left: 2rem;
+    transition: ease-in 150ms;
+    
+    &:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+  }
+}
+
+.projects {
+  padding: 2.5rem 15rem;
+  background: #25262a;
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project {
+    height: 200px;
+    width: 300px;
+    margin-right: 1rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .header {
   display: flex;
-  height: 500px;
+  height: 850px;
   align-items: center;
   padding: 2.5rem 15rem;
+  justify-content: space-between;
+
+  .expertise {
+    width: 45%;
+    height: 50%;
+    
+    .icons {
+      display: flex;
+      margin-top: 2rem;
+    }
+
+    .info {
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 5px;
+      font-size: 20px;
+      margin-top: 1.5rem;
+    }
+
+    .item {
+      display: flex;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      background-color: #25262a;
+      margin: 0 0.5rem;
+      animation: float 6s ease-in-out infinite;
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.3);
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .icon {
+        font-size: 30px;
+      }
+
+    }
+  }
 
   .introduction {
-    width: 50%;
+    width: 45%;
+    height: 50%;
+    animation: fadeIn 1s ease-in forwards;
   
     h1, p {
       padding: 0;
@@ -25,16 +134,18 @@ body, html, #root {
     h1 {
       color: #fff;
       font-size: 30px;
+      margin-top: 2rem;
     }
 
     p {
-      color: #fff;
-      opacity: 0.7;
+      color: rgba(255, 255, 255, 0.7);
+      // opacity: 0.7;
       margin-top: 5px;
-      // background-color: #25262a;
-      // border-radius: 6px;
-      // padding: 1rem;
       font-size: 20px;
+
+      span {
+        opacity: 1;
+      }
     }
   }
 }
@@ -43,8 +154,12 @@ body, html, #root {
   display: flex;
   padding: 0 15rem;
   margin-top: 3.5rem;
+  padding: 1rem 15rem;
   justify-content: space-between;
-
+  position: sticky;
+  top: 0;
+  background-color: $backgroundColor;
+  z-index: 2;
   .left-nav {
     display: flex;
   }
@@ -114,4 +229,32 @@ body, html, #root {
     }
   }
   
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.3);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.1);
+		transform: translatey(-5px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.3);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes fadeIn {
+  from {
+    // transform: translatex(-200%);
+    opacity: 0;
+  }
+
+  to {
+    // transform: translatex(0%);
+    opacity: 1;
+
+  }
 }
