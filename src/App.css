@@ -45,8 +45,7 @@ body {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 
@@ -59,10 +58,12 @@ body {
 
 .portfolio-site:hover {
   cursor: pointer;
+  transform: scale(1.02);
 }
 
 .site-thumbnail {
-  max-width: 100%;
+  min-width: 100%;
+  max-height: 195px;
 }
 
 .site-links a {
@@ -85,4 +86,51 @@ body {
 .site-info {
   display: flex;
   justify-content: space-between;
+}
+
+.about-me-text {
+  height: 50px;
+  color: #363333;
+  text-align: center;
+  line-height: 26px;
+}
+
+section {
+  margin-top: 5rem;
+}
+.section-header {
+  padding: 0;
+  margin: 0;
+  color: #363333;
+  text-align: center;
+}
+
+.fromRight {
+  animation: fromRight ease-in-out;
+}
+
+
+@keyframes fromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.border-line {
+  align-self: center;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #5200FF;
 }
