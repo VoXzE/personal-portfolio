@@ -124,6 +124,7 @@ const App = () => {
               </div>
             </div>
 
+
             <div className="project">
               <img src={require("./assets/site4.gif")} className="project-thumb" alt="project-thumb" />
               <div className="links">
@@ -144,7 +145,7 @@ const App = () => {
         </div>
 
         <div className="footer">
-          Copyright © 2000-2020 - All Rights Reserved.
+          Copyright © 2000-2020 - All Rights Reserved
         </div>
 
       </div>
