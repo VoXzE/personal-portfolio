@@ -233,6 +233,10 @@ label {
     display: flex;
     list-style-type: none;
 
+    a {
+      text-decoration: none;
+    }
+
     .navigation-item {
       margin: 0 0.8rem;
       color: #ffffffab;

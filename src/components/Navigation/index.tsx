@@ -18,8 +18,8 @@ const Navigation = (props: NavigationPropsInterface) => {
         </ul>
       </div>
       <ul className="navigation-social">
-        <li className="navigation-item"><FontAwesomeIcon icon={faTwitter} /> Twitter</li>
-        <li className="navigation-item"><FontAwesomeIcon icon={faGithub} /> Github</li>
+        <a href="https://twitter.com/VoXzE_" target="_blank"><li className="navigation-item"><FontAwesomeIcon icon={faTwitter} /> Twitter</li></a>
+        <a href="https://github.com/VoXzE" target="_blank"><li className="navigation-item"><FontAwesomeIcon icon={faGithub} /> Github</li></a>
       </ul>
     </div>
   )
