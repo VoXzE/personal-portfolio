@@ -96,7 +96,7 @@ const App = () => {
               <img src={require("./assets/site1.png")} className="project-thumb" alt="project-thumb" />
               <div className="links">
                 <a href="https://bityz.com/" className="link" target="_blank">Live</a>
-                <a href="https://github.com/VoXzE/mo-project" className="link" target="_blank">Github</a>
+                <a href="https://github.com/MoCapwell/Bityz" className="link" target="_blank">Github</a>
               </div>
             </div>
 
