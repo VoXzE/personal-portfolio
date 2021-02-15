@@ -101,6 +101,14 @@ const App = () => {
             </div>
 
             <div className="project">
+              <img src={require("./assets/site8.png")} className="project-thumb" alt="project-thumb" />
+              <div className="links">
+                <a href="https://www.npmjs.com/package/phemex-api" className="link" target="_blank">Live</a>
+                <a href="https://github.com/VoXzE/phemex-api" className="link" target="_blank">Github</a>
+              </div>
+            </div>
+
+            <div className="project">
               <img src={require("./assets/site2.png")} className="project-thumb" alt="project-thumb" />
               <div className="links">
                 <a href="https://xeno-gaming.co.uk/" className="link" target="_blank">Live</a>
