@@ -11,7 +11,7 @@ const Navigation = (props: NavigationPropsInterface) => {
   return (
     <div className="navigation">
       <div className="left-nav">
-        <div className="logo"><span>Jeremiah</span> Flores</div>
+        <div className="logo"><span>Jeremiah</span></div>
         <ul className="navigation-links">
           <li className="navigation-item" onClick={() => props.moveToProjects()}>Projects</li>
           <li className="navigation-item" onClick={() => props.moveToContact()}>Contact</li>
